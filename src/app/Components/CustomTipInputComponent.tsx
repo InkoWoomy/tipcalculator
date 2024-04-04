@@ -28,6 +28,7 @@ export function CustomTipInputComponent(props: {
               placeholder="Input custom tip"
               onChange={props.onChange}
               ref={customTip}
+              onKeyDown={(evt) => ["e", "E", "+", "-"].includes(evt.key) && evt.preventDefault()}
             />
 
             <div className="pl-2 text-lg">%</div>

@@ -10,7 +10,7 @@ export function GroupInputComponent(props: {onChange: (e: React.ChangeEvent<HTML
                 name="per person"
                 className="rounded-md px-3 text-left placeholder:text-gray-400 text-lg"
                 placeholder="Enter Number of People"
-                
+                onKeyDown={(evt) => ["e", "E", "+", "-"].includes(evt.key) && evt.preventDefault()}
                 onChange={props.onChange}
                 />
             </div>

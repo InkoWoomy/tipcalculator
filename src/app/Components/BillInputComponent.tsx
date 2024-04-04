@@ -14,6 +14,7 @@ export function BillInputComponent(props: {onChange: (e: React.ChangeEvent<HTMLI
                 placeholder="00.00"
                 pattern="\d+(\.\d{0,2})?"
                 onChange={props.onChange}
+                onKeyDown={(evt) => ["e", "E", "+", "-"].includes(evt.key) && evt.preventDefault()}
                 />
             </div>
             
