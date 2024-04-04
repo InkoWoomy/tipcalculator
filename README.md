@@ -1,3 +1,7 @@
+Peer Review, Sebastian Breve-Sanchez: You have a functioning tip calculator, with a unique design. However, seeing how the tip calculator should have been build off of the design images, it is moot. I do like how you implemented the modal, though. I noticed that when you input a number with a decimal inside the bill input, the decimal does not carry over to the total. I did some tests and if you replace input: text with input: number in your billing component, as well as replace parseInt with Number and remove the math.Ceil, you can get the decimal to carry. You also have an issue where, when inputting a zero in your Number of People imput, you can get infinity. That issue becomes more common when replacing the parseInts and removing the Math.ceil, though. To top it all off, your reset button clears all of the values inside the code, but does not clear the values off the screen, so you can still see any inputted numbers.
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
